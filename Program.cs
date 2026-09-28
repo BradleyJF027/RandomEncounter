@@ -3,6 +3,7 @@ string name = string.Empty;
 string choice = string.Empty;
 int floorNo = 1;
 Player player = new Player();
+Character character = new Character();
 
 Console.WriteLine("What is your name?");
 do {
@@ -28,8 +29,47 @@ while (choice != "1" && choice != "2");
 switch (choice) {
     case "1":
         Console.Clear();
-        Console.WriteLine("Starting a run...");
+        Console.WriteLine("=== Random Encounter ===");
+        Console.WriteLine("");
+        Console.WriteLine("You enter the dungeon...");
+        Console.WriteLine("");
+        Console.WriteLine("Press Enter to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine($"=== FLOOR {floorNo} ===");
+        Console.WriteLine("");
+        Console.WriteLine("You encounter a goblin!");
+        Console.WriteLine("");
+        Console.WriteLine("Your stats:");
+        Console.WriteLine($"Name: {character.name}");
+        Console.WriteLine($"Class: {character.charClass}");
+        Console.WriteLine($"Current HP: {character.currentHP}");
+        Console.WriteLine($"Max HP: {character.maxHP}");
+        Console.WriteLine($"Attack: {character.attack}");
         break;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     case "2":
         Console.Clear();
         Console.WriteLine("Quitting the game...");
