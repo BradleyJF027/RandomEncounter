@@ -1,7 +1,10 @@
-class Character {
+class Character:Entity {
     public string name = "Lorem";
     public CharacterClass charClass = CharacterClass.Fighter;
-    public int currentHP = 100;
-    public int maxHP = 100;
-    public int attack = 10;
+
+    public Character(int HP, int atk) {
+        this.currentHP = HP;
+        this.maxHP = HP;
+        this.attack = atk;
+    }
 }

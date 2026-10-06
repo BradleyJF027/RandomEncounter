@@ -3,7 +3,7 @@ string name = string.Empty;
 string choice = string.Empty;
 int floorNo = 1;
 Player player = new Player();
-Character character = new Character();
+Character character = new Character(100, 10);
 
 Console.WriteLine("What is your name?");
 do {
